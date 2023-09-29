@@ -1,0 +1,15 @@
+C:\Users\Lenovo\source\repos\grupo-2-protocolo-2\GrpcCliente2\bin\Debug\net6.0\GrpcCliente2.exe
+C:\Users\Lenovo\source\repos\grupo-2-protocolo-2\GrpcCliente2\bin\Debug\net6.0\GrpcCliente2.deps.json
+C:\Users\Lenovo\source\repos\grupo-2-protocolo-2\GrpcCliente2\bin\Debug\net6.0\GrpcCliente2.runtimeconfig.json
+C:\Users\Lenovo\source\repos\grupo-2-protocolo-2\GrpcCliente2\bin\Debug\net6.0\GrpcCliente2.dll
+C:\Users\Lenovo\source\repos\grupo-2-protocolo-2\GrpcCliente2\bin\Debug\net6.0\GrpcCliente2.pdb
+C:\Users\Lenovo\source\repos\grupo-2-protocolo-2\GrpcCliente2\obj\Debug\net6.0\GrpcCliente2.csproj.AssemblyReference.cache
+C:\Users\Lenovo\source\repos\grupo-2-protocolo-2\GrpcCliente2\obj\Debug\net6.0\GrpcCliente2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\source\repos\grupo-2-protocolo-2\GrpcCliente2\obj\Debug\net6.0\GrpcCliente2.AssemblyInfoInputs.cache
+C:\Users\Lenovo\source\repos\grupo-2-protocolo-2\GrpcCliente2\obj\Debug\net6.0\GrpcCliente2.AssemblyInfo.cs
+C:\Users\Lenovo\source\repos\grupo-2-protocolo-2\GrpcCliente2\obj\Debug\net6.0\GrpcCliente2.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\source\repos\grupo-2-protocolo-2\GrpcCliente2\obj\Debug\net6.0\GrpcCliente2.dll
+C:\Users\Lenovo\source\repos\grupo-2-protocolo-2\GrpcCliente2\obj\Debug\net6.0\refint\GrpcCliente2.dll
+C:\Users\Lenovo\source\repos\grupo-2-protocolo-2\GrpcCliente2\obj\Debug\net6.0\GrpcCliente2.pdb
+C:\Users\Lenovo\source\repos\grupo-2-protocolo-2\GrpcCliente2\obj\Debug\net6.0\GrpcCliente2.genruntimeconfig.cache
+C:\Users\Lenovo\source\repos\grupo-2-protocolo-2\GrpcCliente2\obj\Debug\net6.0\ref\GrpcCliente2.dll

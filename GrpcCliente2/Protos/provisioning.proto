@@ -1,0 +1,89 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcServer2.Protos";
+
+package provisioning;
+
+service Provisioning{
+  rpc Reserva (ReservaRequesito) returns (ReservaReply) {}
+  rpc Activar (ActivarRequesito) returns (ActivarReply) {}
+  rpc Deactivar (DeactivarRequesito) returns (DeactivarReply) {}
+  rpc Terminar (TerminarRequesto) returns (TerminarReply) {}
+}
+
+message ReservaRequesito {
+  string rua = 1;
+  int32 num=2;
+  string userID = 3;
+  string passw = 4;
+}
+
+message ReservaReply {
+  int32 num_administrativo=1;
+  string result = 2;
+}
+
+message ActivarRequesito {
+  int32 num_administrativo = 1;
+  string userID = 2;
+  string passw = 3;
+}
+
+message ActivarReply{
+  bool canActivate = 1;
+  int32 expectedActivationTime = 2;
+  string result =3;
+
+}
+
+message DeactivarRequesito {
+  int32 num_administrativo = 1;
+  string userID = 2;
+  string passw = 3;
+}
+
+message DeactivarReply{
+  bool canActivate = 1;
+  int32 expectedActivationTime = 2;
+  string result =3;
+
+}
+
+message TerminarRequesito {
+  int32 num_administrativo = 1;
+  string userID = 2;
+  string passw = 3;
+}
+
+message TerminarReply{
+  bool canActivate = 1;
+  int32 expectedActivationTime = 2;
+  string result =3;
+}
+
+message MyInfoRequest{
+	string userID = 1;
+	string passw = 2;
+}
+
+message MyInfoReply{
+	string result =3;
+}
+
+message FreeCoberturaRequesito{
+	string userID = 1;
+	string passw = 2;
+}
+
+message FreeCoberturaReply{
+	string result =3;
+}
+
+message AllInforRequesito{
+	string userID = 1;
+	string passw = 2;
+}
+
+message AllInforReply{
+	string result =3;
+}

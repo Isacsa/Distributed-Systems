@@ -1,0 +1,87 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcServer2.Protos";
+
+package provisioning;
+
+service Provisioning {
+  rpc Reserva (RequisicaoReserva) returns (RespostaReserva) {}
+  rpc Ativar (RequisicaoAtivar) returns (RespostaAtivar) {}
+  rpc Desativar (RequisicaoDesativar) returns (RespostaDesativar) {}
+  rpc Terminar (RequisicaoTerminar) returns (RespostaTerminar) {}
+}
+
+message RequisicaoReserva {
+  string rua = 1;
+  int32 num = 2;
+  string userID = 3;
+  string passw = 4;
+}
+
+message RespostaReserva {
+  int32 num_administrativo = 1;
+  string resultado = 2;
+}
+
+message RequisicaoAtivar {
+  int32 num_administrativo = 1;
+  string userID = 2;
+  string passw = 3;
+}
+
+message RespostaAtivar {
+  bool podeAtivar = 1;
+  int32 tempoAtivacaoEsperado = 2;
+  string resultado = 3;
+}
+
+message RequisicaoDesativar {
+  int32 num_administrativo = 1;
+  string userID = 2;
+  string passw = 3;
+}
+
+message RespostaDesativar {
+  bool podeAtivar = 1;
+  int32 tempoAtivacaoEsperado = 2;
+  string resultado = 3;
+}
+
+message RequisicaoTerminar {
+  int32 num_administrativo = 1;
+  string userID = 2;
+  string passw = 3;
+}
+
+message RespostaTerminar {
+  bool podeAtivar = 1;
+  int32 tempoAtivacaoEsperado = 2;
+  string resultado = 3;
+}
+
+message RequisicaoMinhasInformacoes {
+  string userID = 1;
+  string passw = 2;
+}
+
+message RespostaMinhasInformacoes {
+  string resultado = 3;
+}
+
+message RequisicaoCoberturaGratis {
+  string userID = 1;
+  string passw = 2;
+}
+
+message RespostaCoberturaGratis {
+  string resultado = 3;
+}
+
+message RequisicaoTodasInformacoes {
+  string userID = 1;
+  string passw = 2;
+}
+
+message RespostaTodasInformacoes {
+  string resultado = 3;
+}

@@ -1,0 +1,47 @@
+syntax = "proto3";
+
+package Protocolo.Provisioning;
+
+message ReservationRequest {
+  string modality = 1;
+  string address = 2;
+}
+
+message ReservationResponse {
+  bool success = 1;
+  int32 reservation_number = 2;
+}
+
+message ActivationRequest {
+  int32 reservation_number = 1;
+}
+
+message ActivationResponse {
+  bool success = 1;
+  int32 estimated_time = 2;
+}
+
+message DeactivationRequest {
+  int32 reservation_number = 1;
+}
+
+message DeactivationResponse {
+  bool success = 1;
+  int32 estimated_time = 2;
+}
+
+message TerminationRequest {
+  int32 reservation_number = 1;
+}
+
+message TerminationResponse {
+  bool success = 1;
+  int32 estimated_time = 2;
+}
+
+service ProvisioningService {
+  rpc Reserve(ReservationRequest) returns (ReservationResponse);
+  rpc Activate(ActivationRequest) returns (ActivationResponse);
+  rpc Deactivate(DeactivationRequest) returns (DeactivationResponse);
+  rpc Terminate(TerminationRequest) returns (TerminationResponse);
+}
